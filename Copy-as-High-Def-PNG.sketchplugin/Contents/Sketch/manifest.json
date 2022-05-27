@@ -1,0 +1,49 @@
+{
+  "name": "Copy as High-Def PNG",
+  "description": "Copy an Artboard or Layer to Clipboard at 1x, 2x or 3x",
+  "author": "Francesco Bertocci",
+  "email": "fbmore@gmail.com",
+  "homepage": "http://www.francescobertocci.com",
+  "license": "MIT",
+  "forked-from": "https://github.com/Ashung/Automate-Sketch",
+  "appcast": "",
+  "version": "1",
+  "identifier": "com.fbmore.copyas",
+  "icon": "icon.png",
+  "suppliesData": true,
+  "compatibleVersion": "3",
+  "bundleVersion": "1",
+  "scope": "application",
+  "commands": [
+    {
+      "name": "Copy as PNG @1x",
+      "identifier": "copy_as_png_1x",
+      "script": "Development/Copy_as.js",
+      "icon": "icon_runner.png",
+      "shortcut": "cmd option shift 1",
+    },
+    {
+      "name": "Copy as PNG @2x",
+      "identifier": "copy_as_png_2x",
+      "script": "Development/Copy_as.js",
+      "icon": "icon_runner.png",
+      "shortcut": "cmd option shift 2",
+    },
+    {
+      "name": "Copy as PNG @3x",
+      "identifier": "copy_as_png_3x",
+      "script": "Development/Copy_as.js",
+      "icon": "icon_runner.png",
+      "shortcut": "cmd option shift 3",
+    },
+  ],
+  "menu": {
+    "isRoot": false,
+    "title": "Copy as High-Def PNG",
+    "items": [
+          "copy_as_png_1x",
+          "copy_as_png_2x",
+          "copy_as_png_3x",
+        ]
+  }
+}
